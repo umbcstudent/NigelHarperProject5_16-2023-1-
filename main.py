@@ -26,8 +26,19 @@ def summarize_book():
     frequent_words = {word: count for word, count in word_count.items() if count > 500}
 
     # Display results
+    print("============== Result =================")
+    #Print two blank space
+    print()
+    print()
+    
     print("'{}' is the word that appear the most throughout a text, the total of {} times".format(most_common_word, most_common_word_count))
+    #Print blank space
+    print()
+    
     print("There are {} words that are four letter long".format(len(unique_four_letter_words)))
+    #Print blank space
+    print()
+    
     print("I noticed that these words show up more than 500 times:")
     for word, count in frequent_words.items():
         print("{} - {}".format(word, count))
