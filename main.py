@@ -7,9 +7,9 @@ def readBook():
 #This function analyze the string to calculate the variable total counts
 def summarize_book():
     # Read the book
-    text = readBook()
+    draculaText = readBook()
     # Get word count and find most common word
-    words = text.lower().split()
+    words = draculaText.lower().split()
     word_count = {}
     for word in words:
         if word in word_count:
